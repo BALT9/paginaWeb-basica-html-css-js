@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.menu .links{
+    display: flex;
+    align-items: center;
+}
+.menu .links a{
+    color: gray;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu .links a i{
+    font-size: 25px;
+}
