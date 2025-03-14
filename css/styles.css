@@ -1,25 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.menu .links{
+
+.menu .icon {
+    display: none;
+}
+
+.menu .links {
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición de deslizamiento y opacidad */
 }
-.menu .links a{
+
+.menu .links a {
     color: gray;
     text-decoration: none;
     margin: 0 20px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.menu .links a i{
+
+.menu .links a i {
     font-size: 25px;
+}
+
+/* Pantallas grandes de escritorio */
+@media only screen and (max-width: 1200px) {
+    /* Estilos para pantallas grandes (escritorios grandes) */
+}
+
+/* Pantallas de escritorio medianas */
+@media only screen and (max-width: 1024px){
+    /* Estilos para pantallas medianas (escritorios pequeños) */
+}
+
+/* Tabletas grandes */
+@media only screen and (max-width: 768px){
+    /* Estilos para tabletas grandes (en paisaje) */
+    
+    /* menu------------------------------- */
+    .menu .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 50px;
+    }
+    
+    .menu .links {
+        position: absolute;
+        background-color: rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 100vh;
+        top: 0%;
+        left: -100%; /* Inicialmente el menú está fuera de la vista */
+        opacity: 0; /* Inicialmente el menú es invisible */
+    }
+
+    .menu .links.active {
+        left: 0; /* Mover el menú a la vista */
+        opacity: 1; /* Hacer visible el menú */
+    }
+
+    .menu .links a {
+        color: #fff;
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .menu .links a i {
+        font-size: 40px;
+    }
+}
+
+/* Tabletas pequeñas / Dispositivos móviles grandes */
+@media only screen and (max-width: 480px){
+    /* Estilos para tabletas pequeñas y móviles grandes */
+}
+
+/* Móviles pequeños */
+@media only screen and (max-width: 479px) {
+    /* Estilos para pantallas de móviles pequeños */
 }
