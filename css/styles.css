@@ -53,6 +53,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
 }
 .principal{
     margin-bottom: 20px;
@@ -75,6 +77,22 @@
     font-size: 18px;
     border-radius: 20px;
     padding: 10px 25px;
+}
+.flecha{
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flecha i{
+    color: #000;
+    font-size: 50px;
+    cursor: pointer;
 }
 
 
@@ -112,6 +130,7 @@
         top: 0%;
         left: -100%; /* Inicialmente el menú está fuera de la vista */
         opacity: 0; /* Inicialmente el menú es invisible */
+        z-index: 10;
     }
 
     .menu .links.active {
