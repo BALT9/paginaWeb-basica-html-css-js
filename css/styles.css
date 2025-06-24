@@ -19,7 +19,8 @@
 .menu .links {
     display: flex;
     align-items: center;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición de deslizamiento y opacidad */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transición de deslizamiento y opacidad */
 }
 
 .menu .links a {
@@ -31,7 +32,7 @@
     transition: 0.3s;
 }
 
-.menu .links a:hover{
+.menu .links a:hover {
     color: #ff6600;
 }
 
@@ -40,7 +41,7 @@
 }
 
 /* portada */
-.portada{
+.portada {
     /* background-color: aqua; */
     height: 65vh;
     width: 100%;
@@ -56,22 +57,26 @@
 
     position: relative;
 }
-.principal{
+
+.principal {
     margin-bottom: 20px;
     font-size: 50px;
     font-family: "Hind Mysuru", sans-serif;
     text-align: center;
     color: #fff;
 }
-.secundario{
+
+.secundario {
     margin-bottom: 20px;
     font-family: "Hind Mysuru", sans-serif;
     text-align: center;
     color: #fff;
 }
-.portada .boton{
+
+.portada .boton {
     margin-top: 20px;
 }
+
 .portada .boton a {
     background: #ff6600;
     text-decoration: none;
@@ -80,7 +85,8 @@
     border-radius: 20px;
     padding: 10px 25px;
 }
-.flecha{
+
+.flecha {
     width: 100px;
     height: 50px;
     background-color: #fff;
@@ -91,11 +97,33 @@
     justify-content: center;
     align-items: center;
 }
-.flecha i{
+
+.flecha i {
     color: #000;
     font-size: 50px;
     cursor: pointer;
 }
+
+/* text-section */
+
+.text-section {
+    text-align: center;
+    margin: 3rem 0;
+    font-family: "Hind Mysuru", sans-serif;
+}
+
+.text-section h1 {
+    padding: .5rem 0;
+    color: #343333;
+    font-weight: 500;
+}
+
+.text-section p {
+    padding: 0.6rem 0;
+    color: #2c2c2c;
+    font-size: 1.1rem;
+}
+
 
 
 /* Pantallas grandes de escritorio */
@@ -104,12 +132,12 @@
 }
 
 /* Pantallas de escritorio medianas */
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
     /* Estilos para pantallas medianas (escritorios pequeños) */
 }
 
 /* Tabletas grandes */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     /* Estilos para tabletas grandes (en paisaje) */
 
     /* menu------------------------------- */
@@ -120,7 +148,7 @@
         height: 100%;
         font-size: 50px;
     }
-    
+
     .menu .links {
         position: absolute;
         background-color: #ff6600;
@@ -130,14 +158,18 @@
         width: 80%;
         height: 100vh;
         top: 0%;
-        left: -100%; /* Inicialmente el menú está fuera de la vista */
-        opacity: 0; /* Inicialmente el menú es invisible */
+        left: -100%;
+        /* Inicialmente el menú está fuera de la vista */
+        opacity: 0;
+        /* Inicialmente el menú es invisible */
         z-index: 10;
     }
 
     .menu .links.active {
-        left: 0; /* Mover el menú a la vista */
-        opacity: 1; /* Hacer visible el menú */
+        left: 0;
+        /* Mover el menú a la vista */
+        opacity: 1;
+        /* Hacer visible el menú */
     }
 
     .menu .links a {
@@ -145,18 +177,37 @@
         margin: 0;
         font-size: 25px;
     }
-    
-    .menu .links a:hover{
+
+    .menu .links a:hover {
         color: #fff;
     }
 
     .menu .links a i {
         font-size: 40px;
     }
+
+    /* text-section */
+    .text-section {
+        margin: 1rem 20px;
+    }
+
+    .text-section h1 {
+        padding: 1rem 0 0;
+        color: #343333;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .text-section p {
+        padding: 10px 0;
+        color: #2c2c2c;
+        font-size: 14px;
+        font-weight: 300;
+    }
 }
 
 /* Tabletas pequeñas / Dispositivos móviles grandes */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
     /* Estilos para tabletas pequeñas y móviles grandes */
 }
 
